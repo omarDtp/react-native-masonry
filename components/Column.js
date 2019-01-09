@@ -40,13 +40,13 @@ export default class Column extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({
-      images: this._resizeImages(
-        nextProps.data,
-        nextProps.parentDimensions,
-        nextProps.columns
-      )
-    });
+    // this.setState({
+    // images: this._resizeImages(
+    //   nextProps.data,
+    //   nextProps.parentDimensions,
+    //   nextProps.columns
+    // )
+    // });
   }
 
   // Transforms an array of images with dimensions scaled according to the
@@ -56,7 +56,7 @@ export default class Column extends Component {
     return Object.keys(data).map(key => {
       const image = data[key];
       const imageSizedForColumn = this._resizeByColumns(
-        data[key].dimensions,
+        { width: 200, height: 200 },
         parentDimensions,
         nColumns
       );
@@ -72,7 +72,7 @@ export default class Column extends Component {
   // Resize image while maintain aspect ratio
   // _resizeByColumns :: ImgDimensions , parentDimensions, nColumns  -> AdjustedDimensions
   _resizeByColumns(
-    imgDimensions = { width: 0, height: 0 },
+    imgDimensions = { width: 200, height: 0 },
     parentDimensions,
     nColumns = 2
   ) {
@@ -119,7 +119,6 @@ export default class Column extends Component {
     // }
     const brick = data.item;
     const gutter = data.index === 0 ? 0 : brick.gutter;
-    console.log(brick);
     const key = `RN-MASONRY-BRICK-${brick.column}-${data.index}`;
     const {
       imageContainerStyle,

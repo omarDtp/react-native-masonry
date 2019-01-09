@@ -1,27 +1,30 @@
 {
-  "_from": "react-native-masonry",
-  "_id": "react-native-masonry@0.5.0-alpha.3",
+  "_args": [
+    [
+      "github:omarDtp/react-native-masonry",
+      "/home/omar/workspace/dtp/TnexusMobile_demo"
+    ]
+  ],
+  "_from": "github:omarDtp/react-native-masonry",
+  "_id": "react-native-masonry@github:omarDtp/react-native-masonry#869c45f3202c50fc4c33e1f5ff645f4667112f13",
   "_inBundle": false,
-  "_integrity": "sha512-Jxw+eIMr3Fzb7TW0ZDC5STfLNiQHuQjZDNk4QJPenuM5l6bKZN51sMV9TbsO3g6zxQLHvO0DPNY5hfA5zNlFqw==",
+  "_integrity": "",
   "_location": "/react-native-masonry",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "react-native-masonry",
-    "name": "react-native-masonry",
-    "escapedName": "react-native-masonry",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+    "type": "git",
+    "raw": "github:omarDtp/react-native-masonry",
+    "rawSpec": "github:omarDtp/react-native-masonry",
+    "saveSpec": "github:omarDtp/react-native-masonry",
+    "fetchSpec": null,
+    "gitCommittish": null
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-masonry/-/react-native-masonry-0.5.0-alpha.3.tgz",
+  "_resolved": "github:omarDtp/react-native-masonry#869c45f3202c50fc4c33e1f5ff645f4667112f13",
   "_shasum": "9169a85038b18fa478bb00d39ecf0227a65d2cc1",
-  "_spec": "react-native-masonry",
+  "_spec": "github:omarDtp/react-native-masonry",
   "_where": "/home/omar/workspace/dtp/TnexusMobile_demo",
   "author": {
     "name": "Brandon Him"
