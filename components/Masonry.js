@@ -241,7 +241,7 @@ export default class Masonry extends Component {
           removeClippedSubviews={false}
           onEndReached={this._delayCallEndReach}
           onEndReachedThreshold={this.props.onEndReachedThreshold}
-          renderItem={(item, index) => (
+          renderItem={({item, index}) => (
             <Column
               ListHeaderComponent={this.props.renderHeader}
               data={item}
