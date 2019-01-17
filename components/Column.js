@@ -137,7 +137,6 @@ export default class Column extends Component {
     return <Brick {...props} />;
   };
 
-  // _keyExtractor :: item -> id
   _keyExtractor = item =>
     "BRICK-KEY-" + item.index + "---" + (item.key ? item.key : "0");
 

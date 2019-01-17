@@ -1,7 +1,6 @@
-import { View, FlatList, Image, Text,ScrollView, Dimensions } from "react-native";
+import { FlatList, ScrollView, Dimensions } from "react-native";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Task from "data.task";
 import isEqual from "lodash.isequal";
 import differenceBy from "lodash.differenceby";
 
@@ -240,10 +239,11 @@ export default class Masonry extends Component {
           scrollRenderAheadDistance={100}
           removeClippedSubviews={false}
           onEndReached={this._delayCallEndReach}
+          keyExtractor={(item, index) => `RN-MASONRY-COLUMN-${index}`}
           onEndReachedThreshold={this.props.onEndReachedThreshold}
-          renderItem={({item, index}) => (
+          renderItem={({ item, index }) => (
             <Column
-              ListHeaderComponent={this.props.renderHeader}
+              // ListHeaderComponent={this.props.renderHeader}
               data={item}
               columns={this.props.columns}
               parentDimensions={this.state.dimensions}
@@ -251,7 +251,6 @@ export default class Masonry extends Component {
               customImageComponent={this.props.customImageComponent}
               customImageProps={this.props.customImageProps}
               spacing={this.props.spacing}
-              key={`RN-MASONRY-COLUMN-${index}`}
             />
           )}
           refreshControl={this.props.refreshControl}
