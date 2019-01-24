@@ -97,7 +97,7 @@ export default class Masonry extends Component {
     const differentColumns = this.props.columns !== nextProps.columns;
     const differentPriority = this.props.priority !== nextProps.priority;
     // We use the difference in the passed in bricks to determine if user is appending or not
-    const brickDiff = differenceBy(nxtProps.bricks, this.props.bricks, "data");
+    const brickDiff = differenceBy(nextProps.bricks, this.props.bricks, "data");
     const appendedData = brickDiff.length !== nextProps.bricks.length;
     const _uniqueCount = brickDiff.length + this.props.bricks.length;
 
