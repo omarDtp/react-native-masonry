@@ -145,7 +145,7 @@ export default class Column extends Component {
       <View
         style={[
           {
-            width: this.state.columnWidth,
+           // width: this.state.columnWidth,
             overflow: "hidden"
           },
           styles.masonry__column
